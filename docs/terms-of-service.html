@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persyaratan Layanan — ARUS DOMPET (ArusKas)</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --primary: #0f4c81;
+      --accent: #10b981;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --surface: #111827;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --primary: #60a5fa;
+        --accent: #34d399;
+        --border: #1f2937;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.68;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .header-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--primary);
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(15, 76, 129, 0.14);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+    .lang-toggle {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    .meta {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: var(--primary);
+    }
+    p { margin: 0 0 10px; }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+    li { margin-bottom: 6px; }
+    code {
+      background: rgba(127, 127, 127, 0.12);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+    .hidden { display: none; }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-card">
+      <div class="badge-row">
+        <span class="badge">ARUS DOMPET (ArusKas) • Terms of Service</span>
+        <div class="lang-toggle" role="group" aria-label="Language Switcher">
+          <button id="btn-id" class="lang-btn active" onclick="setLang('id')">Bahasa Indonesia</button>
+          <button id="btn-en" class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+
+      <h1 id="title-id">Persyaratan Layanan (Terms of Service) — ARUS DOMPET</h1>
+      <h1 id="title-en" class="hidden">Terms of Service — ARUS DOMPET</h1>
+
+      <p class="meta">
+        <strong>Package ID:</strong> <code>com.aistudio.aruskas.vqmzpx</code> &nbsp;|&nbsp;
+        <span id="updated-id"><strong>Berlaku efektif:</strong> 12 November 2026</span>
+        <span id="updated-en" class="hidden"><strong>Effective Date:</strong> November 12, 2026</span>
+      </p>
+    </div>
+
+    <div id="content-id">
+      <div class="section-card">
+        <h2>1. Persetujuan Penggunaan</h2>
+        <p>
+          Dengan mengunduh, memasang, atau menggunakan aplikasi <strong>ARUS DOMPET (ArusKas)</strong>, Anda menyatakan setuju untuk terikat pada Persyaratan Layanan ini serta <a href="./privacy-policy.html">Kebijakan Privasi</a> kami. Apabila Anda tidak menyetujui persyaratan ini, harap hentikan penggunaan aplikasi.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>2. Deskripsi Layanan &amp; Arsitektur Offline-First</h2>
+        <p>
+          ARUS DOMPET adalah aplikasi pencatatan keuangan pribadi, pengelolaan dompet/anggaran, pemantauan tagihan rutin, target tabungan, dan analisis finansial lokal berbasis perangkat (<em>Offline-First</em>). Aplikasi ini tidak menyediakan layanan perbankan, pengiriman uang, kredit/pinjaman, maupun pengelolaan rekening bank secara langsung.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>3. Penafian Keuangan (Bukan Nasihat Investasi/Pajak)</h2>
+        <p>
+          Seluruh perhitungan saldo siap pakai, rasio pengeluaran, simulasi target tabungan, dan kalimat dari <strong>Asisten Keuangan Pintar Offline</strong> dihasilkan berdasarkan rumus deterministik lokal dari angka yang Anda masukkan sendiri. Informasi tersebut bersifat alat bantu pencatatan pribadi dan <strong>bukan</strong> merupakan nasihat investasi, keuangan profesional berlisensi, hukum, maupun perpajakan. Keputusan keuangan sepenuhnya merupakan tanggung jawab Anda.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>4. Versi Gratis &amp; Pembelian ARUS DOMPET PRO (Google Play Billing)</h2>
+        <ul>
+          <li><strong>Gratis Selamanya untuk Pencatatan Dasar:</strong> Pencatatan pemasukan/pengeluaran harian, dompet inti, dan akses terhadap catatan keuangan Anda sendiri tetap tersedia secara gratis meskipun masa eksplorasi atau langganan berakhir.</li>
+          <li><strong>Pilihan Paket PRO:</strong> Tersedia pilihan Langganan Bulanan, Langganan Tahunan, dan Pembelian Sekali Bayar (<em>Lifetime</em>). Harga yang berlaku adalah harga resmi terlokalisasi yang ditampilkan oleh Google Play saat proses pembayaran.</li>
+          <li><strong>Perpanjangan Otomatis &amp; Pembatalan:</strong> Paket langganan Bulanan dan Tahunan diperpanjang secara otomatis melalui akun Google Play Anda kecuali dibatalkan minimal 24 jam sebelum akhir periode penagihan berjalan melalui menu <em>Langganan</em> di Google Play Store.</li>
+          <li><strong>Paket Sekali Bayar (Lifetime):</strong> Memberikan akses fitur PRO untuk aplikasi ARUS DOMPET tanpa tagihan berulang selama aplikasi tersedia dan terhubung ke akun Google Play yang melakukan pembelian.</li>
+          <li><strong>Pemulihan Pembelian:</strong> Anda dapat memulihkan kepemilikan PRO pada perangkat Android lain menggunakan akun Google Play yang sama melalui tombol <em>Pulihkan Pembelian</em>.</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h2>5. Kebijakan Pengembalian Dana (Refund)</h2>
+        <p>
+          Seluruh transaksi pembayaran diproses resmi melalui Google Play. Permintaan pembatalan atau pengembalian dana (<em>refund</em>) tunduk sepenuhnya pada <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Kebijakan Pengembalian Dana Google Play</a>. Apabila suatu transaksi dibatalkan atau di-<em>refund</em>, hak akses fitur PRO akan dicabut otomatis tanpa menghapus catatan keuangan yang sudah Anda simpan.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>6. Tanggung Jawab Keamanan PIN &amp; Pencadangan Data</h2>
+        <ul>
+          <li>Karena data keuangan disimpan secara lokal di perangkat Anda secara default, Anda disarankan melakukan ekspor cadangan (<em>Backup JSON / PDF / CSV</em>) secara berkala sebelum mengganti perangkat atau menghapus aplikasi.</li>
+          <li>Anda bertanggung jawab menjaga kerahasiaan Kunci PIN perangkat/aplikasi Anda. Tim pengembang tidak menyimpan salinan PIN Anda dan tidak dapat memulihkan PIN yang terlupa tanpa proses reset aplikasi.</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h2>7. Penggunaan yang Dilarang &amp; Hak Kekayaan Intelektual</h2>
+        <p>
+          Seluruh desain antarmuka, kode program, ikon, basis data kalimat offline, dan merek <strong>ARUS DOMPET</strong> adalah milik pengembang yang dilindungi hukum. Anda dilarang melakukan rekayasa balik (<em>reverse engineering</em>), mendistribusikan ulang APK yang dimodifikasi, atau memanipulasi sistem lisensi Google Play Billing.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>8. Batasan Tanggung Jawab</h2>
+        <p>
+          Aplikasi disediakan sebagaimana adanya (<em>"as is"</em>). Sejauh diizinkan oleh hukum yang berlaku, pengembang tidak bertanggung jawab atas kerugian tidak langsung, kehilangan data akibat kerusakan perangkat tanpa cadangan, atau kesalahan input nominal oleh pengguna.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>9. Perubahan Ketentuan &amp; Kontak Pengembang</h2>
+        <p>
+          Kami dapat memperbarui Persyaratan Layanan ini sewaktu-waktu seiring pembaruan fitur atau kebijakan Google Play. Untuk pertanyaan layanan atau dukungan pelanggan, silakan hubungi:
+        </p>
+        <ul>
+          <li><strong>Pengembang:</strong> Tim Pengembang ARUS DOMPET</li>
+          <li><strong>Email Resmi:</strong> <a href="mailto:programerway@gmail.com">programerway@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content-en" class="hidden">
+      <div class="section-card">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, or using <strong>ARUS DOMPET (ArusKas)</strong>, you agree to be bound by these Terms of Service and our <a href="./privacy-policy.html">Privacy Policy</a>. If you do not agree, please discontinue using the application.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>2. Service Description &amp; Offline-First Architecture</h2>
+        <p>
+          ARUS DOMPET is a personal expense tracker, wallet/budget manager, bill checklist, savings goal planner, and device-local financial insight application. It is not a bank, payment transmitter, credit provider, or investment brokerage.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>3. Financial Disclaimer</h2>
+        <p>
+          All safe-to-spend calculations, category ratios, savings projections, and outputs from the <strong>Smart Offline Financial Assistant</strong> are computed deterministically on your device from figures you enter manually. They are provided solely as personal budgeting utilities and do <strong>not</strong> constitute licensed financial, investment, tax, or legal advice.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>4. Free Tier &amp; ARUS DOMPET PRO (Google Play Billing)</h2>
+        <ul>
+          <li><strong>Core Ledger Free Forever:</strong> Recording daily income/expenses and viewing your existing financial records remain available for free even if a trial or subscription expires.</li>
+          <li><strong>PRO Plans:</strong> Monthly Subscription, Annual Subscription, and One-Time Purchase (<em>Lifetime</em>) options are available. Exact pricing is displayed in your local currency by Google Play prior to checkout.</li>
+          <li><strong>Auto-Renewal &amp; Cancellation:</strong> Monthly and Annual subscriptions automatically renew via Google Play unless canceled at least 24 hours before the end of the current billing period in Google Play Store Subscriptions.</li>
+          <li><strong>Lifetime Plan:</strong> Grants ongoing access to PRO features for ARUS DOMPET without recurring charges under the purchasing Google Play account.</li>
+          <li><strong>Restore Purchases:</strong> You may restore active PRO entitlements across devices using the same Google Play account via the in-app <em>Restore Purchases</em> button.</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h2>5. Refunds</h2>
+        <p>
+          All payments are processed by Google Play. Refund eligibility and requests are governed by the official <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play Refund Policy</a>. If a purchase is refunded or revoked, PRO features revert to Free without deleting your personal transaction records.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>6. User Data, PIN Security &amp; Backups</h2>
+        <ul>
+          <li>Because records are stored locally on your device by default, you are responsible for creating periodic backups (<code>.json</code>, <code>.pdf</code>, or <code>.csv</code>) before switching or resetting devices.</li>
+          <li>You are responsible for safeguarding your app PIN. For security, PINs are one-way hashed (Salted SHA-256) and cannot be recovered by the developer.</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h2>7. Prohibited Conduct &amp; Intellectual Property</h2>
+        <p>
+          All UI designs, source code, icons, offline insight database assets, and trademarks of <strong>ARUS DOMPET</strong> remain the intellectual property of the developer. Reverse engineering, redistributing modified APKs, or bypassing Google Play Billing license checks is prohibited.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>8. Limitation of Liability</h2>
+        <p>
+          The application is provided on an <em>"as is"</em> basis. To the fullest extent permitted by law, the developer is not liable for indirect damages, data loss resulting from device failure without user backups, or inaccurate manual entries.
+        </p>
+      </div>
+
+      <div class="section-card">
+        <h2>9. Changes &amp; Contact Information</h2>
+        <p>
+          We may revise these Terms from time to time. For support or legal inquiries, please contact:
+        </p>
+        <ul>
+          <li><strong>Developer:</strong> ARUS DOMPET Developer Team</li>
+          <li><strong>Official Email:</strong> <a href="mailto:programerway@gmail.com">programerway@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 ARUS DOMPET (ArusKas) • All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const isId = lang === 'id';
+      document.getElementById('content-id').classList.toggle('hidden', !isId);
+      document.getElementById('content-en').classList.toggle('hidden', isId);
+      document.getElementById('title-id').classList.toggle('hidden', !isId);
+      document.getElementById('title-en').classList.toggle('hidden', isId);
+      document.getElementById('updated-id').classList.toggle('hidden', !isId);
+      document.getElementById('updated-en').classList.toggle('hidden', isId);
+      document.getElementById('btn-id').classList.toggle('active', isId);
+      document.getElementById('btn-en').classList.toggle('active', !isId);
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>

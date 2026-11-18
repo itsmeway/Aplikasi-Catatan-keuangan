@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ArusKas</string>
+    <string name="widget_quick_tx_name">Catat Uang Masuk / Keluar</string>
+    <string name="widget_quick_tx_description">Catat transaksi keluar/masuk, tanggal, kategori, dompet, dan nominal langsung dari beranda HP tanpa membuka aplikasi.</string>
+</resources>
